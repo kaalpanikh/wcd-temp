@@ -1,0 +1,142 @@
+:root {
+    --dark-green: #0F261F;
+    --light-green: #81CBA8;
+    --teal: #48A880;
+    --dark-teal: #31614C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-green);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 60px;
+    min-height: 100vh;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 70vh;
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+    max-height: calc(100vh - 140px);
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.launching-soon {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--teal);
+    height: 40px;
+    overflow: hidden;
+}
+
+.strip-content {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    white-space: nowrap;
+}
+
+.strip-content span {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding-bottom: 50px;
+    }
+    
+    .image-container {
+        margin-bottom: 15px;
+    }
+    
+    .main-image {
+        max-height: calc(100vh - 120px);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-bottom: 45px;
+    }
+    
+    .image-container {
+        margin-bottom: 12px;
+        padding: 10px;
+        min-height: 75vh;
+    }
+    
+    .main-image {
+        max-height: 75vh;
+        width: 98%;
+        border-radius: 6px;
+    }
+    
+    .strip-content span {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-bottom: 40px;
+    }
+    
+    .image-container {
+        margin-bottom: 10px;
+        padding: 5px;
+        min-height: 80vh;
+    }
+    
+    .main-image {
+        max-height: 80vh;
+        width: 100%;
+        border-radius: 4px;
+    }
+    
+    .strip-content span {
+        font-size: 0.9rem;
+        padding: 11px 10px;
+    }
+}

@@ -44,7 +44,23 @@ Our website is built with modern web technologies and follows responsive design 
 3. Open `index.html` in your browser
 
 ### Deployment
-The website is deployed using GitHub Pages and can be accessed at [whitecollardevelopers.in](https://whitecollardevelopers.in)
+The website is deployed using GitHub Pages and can be accessed at:
+- Primary domain: [www.whitecollardevelopers.in](https://www.whitecollardevelopers.in)
+- Apex domain: [whitecollardevelopers.in](https://whitecollardevelopers.in) (automatically redirects to www)
+
+#### Domain Configuration
+- **Apex Domain (whitecollardevelopers.in)**
+  - Uses A records pointing to GitHub Pages IPs:
+    ```
+    185.199.108.153
+    185.199.109.153
+    185.199.110.153
+    185.199.111.153
+    ```
+- **WWW Subdomain (www.whitecollardevelopers.in)**
+  - Uses CNAME record pointing to: kaalpanikh.github.io
+  - Primary domain with HTTPS enabled
+  - Recommended for stable and secure access
 
 ## Contact
 

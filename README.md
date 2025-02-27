@@ -17,8 +17,9 @@ With a keen eye for detail and a commitment to quality, we've been transforming 
 Our website is built with modern web technologies and follows responsive design principles:
 - Responsive layout that adapts to all screen sizes
 - Brand-compliant color scheme
-- Optimized image display
-- Animated elements for enhanced user experience
+- Dynamic video background for immersive experience
+- Enhanced "Launching Soon" ticker with dynamic messaging
+- Robust fallback mechanisms for optimal user experience across devices
 
 ### Technical Details
 
@@ -31,6 +32,11 @@ Our website is built with modern web technologies and follows responsive design 
 - **Typography**:
   - Primary Font: Poppins
   - Font Weights: Light, Regular, Medium, Semibold
+  
+- **Media Elements**:
+  - Background video (MP4 format) with graceful fallbacks
+  - Overlay with semi-transparent background for improved text visibility
+  - Animated gradient effect for the launching soon ticker
 
 ## Development
 
